@@ -2,7 +2,8 @@
 """
 Created by Vic on 2018/5/20 19:30
 """
-from httper import HTTP
+from app.libs.httper import HTTP
+from flask import current_app  # 从 flask 中获取当前 app
 
 
 class YuShuBook:
@@ -20,7 +21,11 @@ class YuShuBook:
         return result
 
     @classmethod
-    def search_by_keyword(cls, keyword, count=15, start=0):
-        url = cls.keyword_url.format(keyword, count, start)
+    def search_by_keyword(cls, keyword, page=1):
+        url = cls.keyword_url.format(keyword, current_app.config['PER_PAGE'], cls.calculate_start(page))
         result = HTTP.get(url)
         return result
+
+    @staticmethod
+    def calculate_start(page):
+        return (page - 1) * current_app.config['PER_PAGE']
