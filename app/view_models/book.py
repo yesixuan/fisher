@@ -5,6 +5,29 @@ Created by Vic on 2018/5/25 06:36
 
 
 class BookViewModel:
+    def __int__(self, book):
+        self.title = book['title']
+        self.publisher = book['publisher']
+        self.page = book['pages'] or ''
+        self.author = '、'.join(book['author'])  # 将数组用顿号链接
+        self.price = book['price']
+        self.summary = book['summary'] or ''
+        self.image = book['image']
+
+
+class BookCollection:
+    def __int__(self):
+        self.total = 0
+        self.books = []
+        self.keyword = ''
+
+    def fill(self, yushu_book, keyword):
+        self.total = yushu_book.total
+        self.keyword = keyword
+        self.books = [BookViewModel(book) for book in yushu_book.books]
+
+
+class _BookViewModel:
     @classmethod
     def package_single(cls, data, keyword):
         returned = {

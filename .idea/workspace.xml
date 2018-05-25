@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61771052-d4bd-4da4-bbee-9e5decf4c8fd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/view_models/book.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/spider/yushu_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/spider/yushu_book.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view_models/book.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/view_models/book.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/web/book.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web/book.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,28 +14,42 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/fisher$fisher.coverage" NAME="fisher Coverage Results" MODIFIED="1527203038028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fisher$fisher.coverage" NAME="fisher Coverage Results" MODIFIED="1527208025062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fisher$app.coverage" NAME="app Coverage Results" MODIFIED="1526826502361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="book.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="book.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/web/book.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+            <state relative-caret-position="-50">
+              <caret line="20" column="26" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="26" />
               <folding>
-                <element signature="e#60#94#0" expanded="true" />
+                <element signature="e#60#71#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="book.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="book.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view_models/book.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+            <state relative-caret-position="285">
+              <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -56,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/app/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
-              <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
               <folding>
                 <element signature="e#60#83#0" expanded="true" />
               </folding>
@@ -88,8 +102,8 @@
       <file leaf-file-name="yushu_book.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/spider/yushu_book.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+            <state relative-caret-position="147">
+              <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
               <folding>
                 <element signature="e#60#83#0" expanded="true" />
               </folding>
@@ -147,6 +161,7 @@
         <option value="$PROJECT_DIR$/app/secure.py" />
         <option value="$PROJECT_DIR$/app/__init__.py" />
         <option value="$PROJECT_DIR$/app/web/book.py" />
+        <option value="$PROJECT_DIR$/app/spider/yushu_book.py" />
         <option value="$PROJECT_DIR$/app/view_models/book.py" />
       </list>
     </option>
@@ -221,7 +236,7 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -317,11 +332,11 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3290653" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2765685" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.20230474" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3008963" />
+      <window_info anchor="bottom" x="21" y="382" width="1398" height="158" id="Terminal" order="7" weight="0.20230474" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3297568" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -373,7 +388,7 @@
         <state relative-caret-position="304">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
-            <element signature="e#60#94#0" expanded="true" />
+            <element signature="e#60#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -398,7 +413,7 @@
         <state relative-caret-position="323">
           <caret line="20" column="26" selection-start-line="14" selection-start-column="4" selection-end-line="20" selection-end-column="26" />
           <folding>
-            <element signature="e#60#94#0" expanded="true" />
+            <element signature="e#60#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -467,7 +482,7 @@
         <state relative-caret-position="323">
           <caret line="20" column="26" selection-start-line="14" selection-start-column="4" selection-end-line="20" selection-end-column="26" />
           <folding>
-            <element signature="e#60#94#0" expanded="true" />
+            <element signature="e#60#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -531,7 +546,7 @@
         <state relative-caret-position="380">
           <caret line="20" column="26" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="20" selection-end-column="26" />
           <folding>
-            <element signature="e#60#94#0" expanded="true" />
+            <element signature="e#60#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -673,7 +688,7 @@
     <entry file="file://$PROJECT_DIR$/app/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
           <folding>
             <element signature="e#60#83#0" expanded="true" />
           </folding>
@@ -682,28 +697,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/spider/yushu_book.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+        <state relative-caret-position="147">
+          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding>
             <element signature="e#60#83#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/web/book.py">
+    <entry file="file://$PROJECT_DIR$/app/view_models/book.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding>
-            <element signature="e#60#94#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="285">
+          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view_models/book.py">
+    <entry file="file://$PROJECT_DIR$/app/web/book.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+        <state relative-caret-position="-50">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="e#60#71#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
