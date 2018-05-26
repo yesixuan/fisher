@@ -7,3 +7,4 @@ DEBUG = True
 
 # 数据库配合数据库驱动
 SQLALCHEMY_DATABASE_URI = 'mysql+cymysql://root:root@localhost:3306/fisher'
+SECRET_KEY = 'GOENVdogndo4y5934djfdgofe8feirt8webfshrgr'

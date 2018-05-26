@@ -5,18 +5,24 @@ Created by Vic on 2018/5/25 06:36
 
 
 class BookViewModel:
-    def __int__(self, book):
+    def __init__(self, book):
         self.title = book['title']
         self.publisher = book['publisher']
-        self.page = book['pages'] or ''
+        self.pages = book['pages'] or ''
         self.author = '、'.join(book['author'])  # 将数组用顿号链接
         self.price = book['price']
         self.summary = book['summary'] or ''
         self.image = book['image']
+        self.isbn = book['isbn']
+
+    @property  # 使用属性打点的方式来调用方法
+    def intro(self):
+        intros = filter(lambda x: True if x else False, [self.author, self.publisher, self.price])
+        return ' / '.join(intros)
 
 
 class BookCollection:
-    def __int__(self):
+    def __init__(self):
         self.total = 0
         self.books = []
         self.keyword = ''
