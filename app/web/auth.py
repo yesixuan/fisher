@@ -1,6 +1,6 @@
 from . import web
 from flask import render_template, request, redirect, url_for, flash
-from flask_login import login_user
+from flask_login import login_user, logout_user
 from app.forms.auth import RegisterForm, LoginForm
 from app.models.user import User
 from app.models.base import db
@@ -49,6 +49,8 @@ def change_password():
     pass
 
 
-@web.route('/logout')
+@web.route('/logout/')
 def logout():
-    pass
+    # 登出本质上就是把 cookie 清除了
+    logout_user()
+    return redirect(url_for('web.index'))
