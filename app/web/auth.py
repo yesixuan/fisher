@@ -10,10 +10,10 @@ from app.models.base import db
 def register():
     form = RegisterForm(request.form)
     if request.method == 'POST' and form.validate():
-        user = User()
-        user.set_attrs(form.data)
-        db.session.add(user)
-        db.session.commit()
+        with db.auto_commit():
+            user = User()
+            user.set_attrs(form.data)
+            db.session.add(user)
         redirect(url_for('web.login'))
     return render_template('auth/register.html', form=form)
 
@@ -26,7 +26,7 @@ def login():
         if user and user.check_password(form.password.data):
             login_user(user, remember=True)  # 将用户登录信息写入到 cookie 中，remember 表示持久存储 cookie （365天）
             next = request.args.get('next')  # next 是 flask-login 帮我们加的查询参数
-            if not next and not next.startswith('/'):  # 第二个判断是防止别人手动输入 next 参数调到别的地方去了
+            if not next or not next.startswith('/'):  # 第二个判断是防止别人手动输入 next 参数调到别的地方去了
                 next = url_for('web.index')
             return redirect(next)
         else:

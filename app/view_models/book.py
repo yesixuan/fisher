@@ -14,6 +14,8 @@ class BookViewModel:
         self.summary = book['summary'] or ''
         self.image = book['image']
         self.isbn = book['isbn']
+        self.pubdate = book['pubdate']
+        self.binding = book['binding']
 
     @property  # 使用属性打点的方式来调用方法
     def intro(self):
